@@ -1,0 +1,13 @@
+RIFT DRAFT V18 — THREE-FILE UPDATE TO YOUR EXISTING Rift-Draft-v2 WEBSITE
+
+Your website remains at https://riftzealot.github.io/Rift-Draft-v2/
+
+1. In GitHub open RiftZealot/Rift-Draft-v2/site/index.html. Click pencil/Edit, replace with the complete text from THIS PACKAGE's site/index.html, Commit changes to main.
+2. Open RiftZealot/Rift-Draft-v2/.github/workflows/deploy.yml. Edit and replace its content from THIS PACKAGE's .github/workflows/deploy.yml, Commit to main.
+3. Under the repo's scripts folder, click Add file > Create new file and name it collect_ranked.py. Paste the contents of THIS PACKAGE's scripts/collect_ranked.py and commit it to main. Do not upload as collect_ranked.py.txt.
+4. In Actions, run Publish Rift Draft and refresh stats. Check for a green check.
+5. Open the website, Ctrl+Shift+R. The Rank selector is in Preferences.
+
+The default datasets remain available without a Riot key. Rank-specific brackets stay unavailable (UNRATED) until published with a real dataset. If you have a Riot PRODUCTION key, put it in GitHub repository Settings > Secrets and variables > Actions > New repository secret under the exact name RIOT_API_KEY. Never send the key to ChatGPT or commit it in code. This is OPTIONAL.
+
+Riot API rank collection is presently a small, imperfect rank-anchored sample, not a statistically comprehensive service. Read README.md for methodology and limitations.
